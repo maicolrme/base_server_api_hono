@@ -2,10 +2,11 @@
   "name": "base-server-api-hono",
   "version": "1.0.0",
   "type": "module",
+  "main": "src/server.ts",
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "start": "tsx src/server.ts",
-    "build": "tsc",
+    "build": "prisma generate && tsc",
     "db:generate": "prisma generate",
     "db:studio": "prisma studio"
   },
